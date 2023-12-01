@@ -1,0 +1,25 @@
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+  <head>
+  </head>
+  <body>
+   <table style="width:100%">
+    <tr>
+     <th>Author</th>
+     <th>Book name</th>
+     <th>Date added</th>
+    </tr>
+    {% for book in all_books %}
+    <tr>
+     <td>{{ book.author }}</td>
+     <td>{{ book.name }}</td>
+     <td>{{ book.time.strftime("%d-%m-%Y") }}</td>
+    </tr>
+    {% endfor %}
+   </table>
+  </body>
+</html>
