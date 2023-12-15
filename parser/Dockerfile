@@ -15,4 +15,4 @@ WORKDIR myparser
 
 RUN . /venv/bin/activate && python3 --version && python3 -m pip install --upgrade pip setuptools wheel build nano && \
     pip install -r /myparser/requirements.txt && export $(xargs < database.conf)
-CMD . /venv/bin/activate && python3 app.py
+CMD . /venv/bin/activate && python3 parser.py
