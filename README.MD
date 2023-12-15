@@ -1,7 +1,7 @@
-#Python Web Scraper
+# Python Web Scraper
 This projects scrapes main page of https://www.biblio-globus.ru/ and stores new books from its main page in postgres database.
 
-##Running/installing
+## Running/installing
 
 `sudo ./build.sh`
 
