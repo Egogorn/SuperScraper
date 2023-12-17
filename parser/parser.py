@@ -8,7 +8,7 @@ from models import Book
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
-time.sleep(10)
+time.sleep(20)
 engine = create_engine(database_uri.DATABASE_CONNECTION_URI)
 engine.connect()
 session = Session(engine)
